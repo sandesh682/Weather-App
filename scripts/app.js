@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const card = document.querySelector('.card');
 
 const updateCity = async (city) => {
-
+    
     const city_data = await getCity(city);
     const weather = await getWeather(city_data.Key);
     
